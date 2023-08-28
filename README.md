@@ -55,20 +55,11 @@ Below we have some examples with this problems:
 
 ## Directory Structure
 
-TODO!
-
-- `data/`: Directory containing image data.
-- `notebooks/`: Jupyter notebooks used for analysis and training.
-- `models/`: Saved trained models.
-- `images/`: Images used in documentation.
+IN PROCESS!
 
 ### Important Files
 
-TODO!
-
-- `analysis.ipynb`: Notebook containing exploratory analysis and model training.
-- `preprocessing.py`: Script for image preprocessing.
-- `requirements.txt`: List of project dependencies.
+IN PROCESS!
 
 ---
 
@@ -94,17 +85,7 @@ For inquiries related to this project, [contact me](mailto:josilva602@gmail.com)
 ## References and Acknowledgments
 
 - We thank the Experimental Pathology Laboratory - School of Medicine, PUC-PR, for providing the data.
-- References used for implementation: [TODO! Bard].
-
-## Usage Instructions
-
-TODO!
-
-1. Navigate to the project's main directory: `cd repository-name`
-2. Run the Jupyter Notebook: `jupyter notebook`
-3. Open the analysis file: `analysis.ipynb`
-
-Follow the instructions in the notebook to perform data analysis and model training.
+- References used for implementation: [IN PROGRESS!].
 
 ## Image Usage and Privacy
 
