@@ -18,18 +18,20 @@ def get_path(data, i):
     img_path = data['Path'][i] + data['Name'][i]
     return img_path
 
-def get_hist(data, i, rgb = False):
+def get_hist(data, i, rgb = False, bins = 256):
     # get the path
     img_path = get_path(data, i)
     if rgb:
         color = ('b', 'g', 'r')
         img = cv.imread(img_path, 1)
-        hist_colors = []
+        hist_colors = np.zeros((256,3), dtype=np.int64)
         for j, col in enumerate(color):
-            histr = cv.calcHist([img], [j], None, [256], [0, 256])
-            hist_colors.append(histr)
+            histr = cv.calcHist([img], [j], None, [bins], [0, 256])
+            hist_colors[:,j] = histr.transpose()
+        return hist_colors
     img = cv.imread(img_path, 0)
-    return img.ravel()
+    hist, bins = np.histogram(img.ravel(), bins=bins, range=[0, 256])
+    return hist
 
 def plot_hist_rgb(data, space):
     """
