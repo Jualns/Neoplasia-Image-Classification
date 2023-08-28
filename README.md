@@ -45,13 +45,21 @@ The bad fragments to define the stage of cancer normally have these 4 problems:
 
 Below we have some examples with this problems:
 
-![1. Blood vessel with blood cells](Example-Problems/blood vessel with blood cells.jpg)
+Blood vessel with blood cells:
+![1. Blood vessel with blood cells](<Example-Problems/blood vessel with blood cells.jpg>)
 
-![2. Random artefact](Example-Problems/random artefact.jpg)
 
-![3. Tissue fold](Example-Problems/tissue fold.jpg)
+Random artefact:
+![2. Random artefact](<Example-Problems/random artefact.jpg>)
 
-![4. White space](Example-Problems/white space.jpg)
+
+Tissue fold:
+![3. Tissue fold](<Example-Problems/tissue fold.jpg>)
+
+
+White space:
+![4. White space](Example-Problems/white.jpg)
+
 
 ## Directory Structure
 
