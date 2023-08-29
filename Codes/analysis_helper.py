@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
+import os
 
 def get_path(data, i):
     """
@@ -32,6 +33,16 @@ def get_hist(data, i, rgb = False, bins = 256):
     img = cv.imread(img_path, 0)
     hist, bins = np.histogram(img.ravel(), bins=bins, range=[0, 256])
     return hist
+
+def get_image_info(image_path):
+    try:
+        with Image.open(image_path) as img:
+            img_bytes = os.path.getsize(image_path)
+            img_size = img.size
+            return img_bytes, img_size
+    except Exception as e:
+        print(f"Erro ao processar a imagem: {e}")
+        return None
 
 def plot_hist_rgb(data, space):
     """
