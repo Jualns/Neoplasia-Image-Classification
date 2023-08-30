@@ -5,6 +5,11 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import os
 
+def get_hist_df(df, id_img):
+    if "Color" in df.columns:
+        return np.array(df[df["id"] == id_img].drop(["id", "Color"], axis = 1).transpose())
+    return np.array(df[df["id"] == id_img].drop(["id"], axis = 1).transpose())
+
 def get_path(data, i):
     """
     Returns the full path to an image using DataFrame information.
